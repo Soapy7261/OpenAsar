@@ -357,6 +357,7 @@ module.exports = {
   INCONSISTENT_INSTALLER_STATE_ERROR: 'InconsistentInstallerState',
 
   tryInitUpdater: (buildInfo, repository_url) => {
+    return false; // Disable updater
     const root_path = paths.getInstallPath();
     if (root_path == null) return false;
 
