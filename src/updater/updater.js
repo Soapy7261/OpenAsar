@@ -369,7 +369,7 @@ module.exports = {
       release_channel: buildInfo.releaseChannel,
       platform: process.platform === 'win32' ? 'win' : 'osx',
       repository_url,
-      root_path,
+      root_path, 
       user_data_path: paths.getUserData(),
       current_os_arch: process.platform === 'win32' ? (['AMD64', 'IA64'].includes(process.env.PROCESSOR_ARCHITEW6432 ?? process.env.PROCESSOR_ARCHITECTURE) ? 'x64' : 'x86') : null
     });
